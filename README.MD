@@ -3,14 +3,16 @@
 
 To run code:
 
-```
 Windows:
+```
 py -3.11 -m venv venv
+```
 venv\Scripts\activate
 ```
+Linux/MacOS:
 ```
-Linux/MacOS
 python3.11 -m venv venv
+```
 source venv/bin/activate
 ```
 ```
