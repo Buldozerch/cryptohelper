@@ -1,0 +1,27 @@
+# Generator
+
+
+To run code:
+
+```
+Windows:
+py -3.11 -m venv venv
+venv\Scripts\activate
+```
+```
+Linux/MacOS
+python3.11 -m venv venv
+source venv/bin/activate
+```
+```
+pip install -r requirements.txt
+```
+```
+python main.py
+```
+
+To do:
+1) Run main.py
+2) Choose option
+Option one - Generates private keys and stores them in files/private.txt
+Option two -Saves private keys in public key format 
