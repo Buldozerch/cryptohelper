@@ -24,4 +24,4 @@ To do:
 1) Run main.py
 2) Choose option:
 1. Option one - Generates private keys and stores them in files/private.txt
-2. Option two -Saves private keys in public key format 
+2. Option two -Saves private keys in public key format in files/address.txt 
