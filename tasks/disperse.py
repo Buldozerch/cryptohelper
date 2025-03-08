@@ -48,8 +48,8 @@ class Disperse():
                 tx = await client.transactions.sign_and_send(tx_params=tx_params)
                 receipt = await tx.wait_for_receipt(client=client, timeout=300)
                 if receipt:
-                    logger.success(f'[{i}/{len(disperse_private)}] Success send Native from {client.account.address} Hash: {tx.hash.hex()}')
                     i += 1
+                    logger.success(f'[{i}/{len(disperse_private)}] Success send Native from {client.account.address} Hash: {tx.hash.hex()}')
                 else:
                     logger.error(f'Cannot send Native {client.account.address}')
 
