@@ -55,10 +55,8 @@ class Client:
 
         if private_key:
             self.account = self.w3.eth.account.from_key(private_key=private_key)
-        elif private_key is None:
-            self.account = self.w3.eth.account.create(extra_entropy=str(random.randint(1, 999_999_999)))
         else:
-            self.account = None
+            self.account = self.w3.eth.account.create(extra_entropy=str(random.randint(1, 999_999_999)))
 
         self.wallet = Wallet(self)
         self.contracts = Contracts(self)
